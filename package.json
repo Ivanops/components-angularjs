@@ -1,0 +1,21 @@
+{
+  "name": "poc-tree",
+  "version": "1.0.0",
+  "description": "POC angular component base app structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Meruvia",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-express-server": "^0.5.3",
+    "grunt-wiredep": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
