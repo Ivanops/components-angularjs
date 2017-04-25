@@ -4,7 +4,10 @@
 
   var component = {
     templateUrl: 'app/second/second.html',
-    controller: 'SecondController'
+    controller: 'SecondController',
+    bindings: {
+      name: '<'
+    }
   }
 
   angular

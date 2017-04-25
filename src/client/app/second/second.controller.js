@@ -8,6 +8,10 @@
 
   function SecondController() {
     var ctrl = this;
-    ctrl.name = 'Second controller here';
+    ctrl.$onInit = init;
+
+    function init () {
+      console.log('second init...');
+    }
   }
 })();

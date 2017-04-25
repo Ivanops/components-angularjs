@@ -4,7 +4,12 @@
 
   var component = {
     templateUrl: 'app/first/first.html',
-    controller: 'FirstController'
+    controller: 'FirstController',
+    bindings: {
+      updateName: '&',
+      name: '<'
+    }
+    
   }
 
   angular

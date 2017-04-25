@@ -8,6 +8,16 @@
 
   function FirstController() {
     var ctrl = this;
-    ctrl.name = 'First controller here';
+    ctrl.changeName = changeName;
+
+    ctrl.$onInit = init;
+
+    function init () {
+      console.log('first init...');
+    }
+
+    function changeName() {
+      ctrl.updateName({coreName:'First: core name', firstName:'First: this is my name', secondName:'First: second name'});
+    }
   }
 })();

@@ -1,5 +1,8 @@
 <div>
-  <h1>Core: {{$ctrl.name}}</h1>
-  <first-component></first-component>
-  <second-component></second-component>
+  <h1>{{$ctrl.name}}</h1>
+  <button ng-click="$ctrl.clickFirst()" type="button">First</button>
+  <button ng-click="$ctrl.clickSecond()" type="button">Second</button>
+  <button ng-click="$ctrl.clickCore()" type="button">Core</button>
+  <first-component ng-show="$ctrl.firstActive" name="$ctrl.firstName" update-name="$ctrl.updateName(coreName, firstName, secondName)"></first-component>
+  <second-component ng-show="$ctrl.secondActive" name="$ctrl.secondName"></second-component>
 </div>
